@@ -1,7 +1,6 @@
 div.login_section{
     width: 100vw;
     position: absolute;
-    /* top: 25%; */
     top: 12%;
     z-index: -4;
     opacity: 0;
@@ -135,4 +134,45 @@ div.login_subsection_5{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+}
+
+@media (max-width:375px){
+    div.login_subsection{
+        height: 300px;
+        gap:20px;
+    }
+
+    div.login_subsection_2_1{
+        width: fit-content;
+        border: none;
+        padding: 0;
+    }
+
+    div.login_subsection_2_1 div:nth-child(2){
+        display: none;
+    }
+
+    div.login_subsection_2{
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.login_subsection_2 div:nth-child(5){
+        width: 100px;
+        height: fit-content;
+    }
+
+    div.login_subsection_3{
+        width: 100%;
+    }
+
+    div.login_subsection_4{
+        text-align: center;
+    }
+
+    div.login_subsection_5{
+        width: 100%;
+    }
 }
