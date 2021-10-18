@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width:970px){
+    div.header_1, div.header_2{
+        padding: 0 5px;
+    }
+
+    div.header_1_container, div.header_2_container{
+        overflow-x: scroll;
+    }
+}
+
+/* Upper nav section */
+
+header div:nth-child(1){
+    height: 64px;
+    width: 100%;
+    background: rgb(51, 53, 69);
+}
+
+header div:nth-child(1) div:nth-child(1){
+    height: 100%;
+    width: 92%;
+    max-width: 1240px;
+    background: rgb(51, 53, 69);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+div.header_1, div.header_2{
+    min-width: 900px;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(2){
+    display: flex;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(1){
+    margin-right: 16px;
+    width: 115px;
+    height: 33.9px;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(2){
+    background: white;
+    height: 36px;
+    width: 549px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: text;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(2) div:nth-child(1){
+    width: 34px;
+    height: 34px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 4px;
+    cursor: text;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(2) div:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(100% - 50px);
+    border: none;
+    background: white;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    max-width: 500px;
+    cursor: text;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    word-wrap: unset;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(1) div:nth-child(2) div svg{
+    height: 13px;
+    width: 13px;
+    margin: 0;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(2) div:nth-child(1){
+    width: fit-content;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.nav_location_txt{
+    display: flex;
+    align-items: center;
+    color: rgb(204, 204, 204);
+    max-width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+}
+
+.nav_location_txt:hover{
+    color: rgb(255, 255, 255);
+}
+
+.nav_location_txt_container{
+    cursor: pointer;
+    height: 100%;
+}
+
+.nav_location_txt::after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid rgb(255, 255, 255);
+    margin-left: 8px;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(2) div:nth-child(2){
+    height: 25px;
+    width: 67px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    justify-content: center;
+    border-radius: 4px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+header div:nth-child(1) div:nth-child(1) div:nth-child(2) div:nth-child(3){
+    cursor: pointer;
+}
+
+/* Lower nav section */
+
+header div:nth-child(2) {
+    height: 40px;
+    width: 100%;
+    background: rgb(31, 37, 51);
+}
+
+header div:nth-child(2) div:nth-child(1){
+    height: 100%;
+    width: 92%;
+    max-width: 1240px;
+    margin: 0 auto;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+} 
+
+header div:nth-child(2) div:nth-child(1) div:nth-child(1) {
+    height: 100%;
+    width: fit-content;
+    margin: 0;
+    color: rgb(204, 204, 204);
+    font-size: 14px;
+    font-weight: 400;
+    gap: 20px;
+}
+
+header div:nth-child(2) div:nth-child(1) div:nth-child(2) {
+    height: 100%;
+    width: fit-content;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 20px;
+}
+
+header div:nth-child(2) div:nth-child(1) div a{
+    position: relative;
+    cursor: pointer;
+}
+
+header div:nth-child(2) div:nth-child(1) div a:hover{
+    color: rgb(220, 53, 88);
+}
+
+header div:nth-child(2) div:nth-child(1) div a div{
+    font-size: 8px !important;
+    color: rgb(231, 54, 77) !important;
+    font-weight: 500 !important;
+    position: absolute;
+    right: -10px;
+    bottom: 70%;
+}

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+div.PopularEvents_Slider{
+    display: flex;
+    gap: 23px;
+    transition: 1s ease;
+}
+
+div.PopularEvents_Slider div a div:nth-child(1){
+    height: calc(378.064px);
+    max-height: calc(378.064px);
+    border-radius: 8px;
+}
+
+div.PopularEvents_Slider div a div:nth-child(1) img{
+    height: 100%;
+    border-radius: 8px;
+}
+
+div.PopularEvents_Slider div a div:nth-child(2){
+    color: rgb(34, 34, 34);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+div.PopularEvents_Slider div a div:nth-child(3){
+    color: rgb(102, 102, 102);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+
+div.PopularEvents_Navigator_Left{
+    width: 40px;
+    height: 100%;
+    background-color: rgb(102, 102, 102);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    visibility: hidden;
+}
+
+div.PopularEvents_Navigator_Right{
+    width: 40px;
+    height: 100%;
+    background-color: rgb(102, 102, 102);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div.PopularEvents_Navigator_Left div{
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    left: 40%;
+}
+
+div.PopularEvents_Navigator_Right div{
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotateZ(45deg);
+    position: absolute;
+    right: 45%;
+}

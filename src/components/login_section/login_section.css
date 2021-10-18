@@ -1,0 +1,138 @@
+div.login_section{
+    width: 100vw;
+    position: absolute;
+    /* top: 25%; */
+    top: 12%;
+    z-index: -4;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+div.login_subsection{
+    width: 90%;
+    max-width: 428px;
+    height: 557px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 38px;
+    gap: 40px;
+}
+
+div.login_subsection_1{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 110px;
+}
+
+div.login_subsection_1 div{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+div.login_subsection_1 div img{
+    width: 100%;
+    height: 100%;
+}
+
+div.login_subsection_2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+div.login_subsection_2_1{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    width: 332px;
+    height: 45px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 4px;
+    font-weight: 500;
+    color: rgb(89, 89, 89);
+    font-size: 14px;
+}
+
+div.login_subsection_2 div:nth-child(1){
+    gap: 50px;
+}
+
+div.login_subsection_2 div:nth-child(2){
+    gap: 55px;
+}
+
+div.login_subsection_2 div:nth-child(3){
+    gap: 60px;
+}
+
+div.login_subsection_2 div:nth-child(4){
+    gap: 58px;
+}
+
+div.login_subsection_2_1 div:nth-child(1){
+    width: 20px;
+    height: 20px;
+}
+
+div.login_subsection_2_1 div img{
+    width: 100%;
+    height: 100%;
+}
+
+div.login_subsection_3{
+    display: flex;
+    align-items: center;
+    width: 332px;
+    height: 45px;
+    gap: 5px;
+    font-size: 14px;
+}
+
+div.login_subsection_3 input{
+    border: none;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 4px 0px 3px;
+    text-overflow: ellipsis;
+    width: 85%;
+    font-size: 14px;
+}
+
+div.login_subsection_3 input:focus{
+    border-bottom: 1px solid rgb(248, 68, 100);
+    outline: none;
+}
+
+
+div.login_subsection_4{
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+}
+
+div.login_subsection_4 a{
+    text-decoration: underline;
+}
+
+div.login_subsection_5{
+    width: 332px;
+    height: 45px;
+    background: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}

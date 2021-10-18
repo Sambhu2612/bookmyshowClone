@@ -1,0 +1,109 @@
+div.Footer{
+    width: 100%;
+    background-color: rgb(49, 48, 53);
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+div.Footer_1{
+    width: 92%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+div.Footer_1 div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+div.Footer_1 div:nth-child(1) div:nth-child(2){
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+div.Footer_1 div:nth-child(1) div:nth-child(3){
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+div.Footer_1 div.contact{
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background-color: rgb(236, 94, 113);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    justify-self: end;
+}
+
+
+div.Footer_2_container{
+    width: 100%;
+    background-color: rgb(64, 64, 67);
+    padding: 10px 0;
+}
+
+div.Footer_2{
+    width: 92%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.Footer_2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    color: rgba(188, 192, 196, 0.74);
+    font-size: 11px;
+    cursor: pointer;
+}
+
+div.Footer_2 div div:nth-child(1){
+    width: 50px;
+    height: 50px;
+}
+
+div.Footer_2 div div:nth-child(1) svg{
+    width: 100%;
+    height: 100%;
+    fill: rgb(198, 198, 199);
+}
+
+
+div.Footer_3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px 0;
+}
+
+div.Footer_3 a div{
+    width: 37px;
+    height: 37px;
+}
+
+div.Footer_3 a div svg{
+    width: 100%;
+    height: 100%;
+    fill: rgb(93, 93, 95);
+}
+
+div.Footer_3 a div svg:hover{
+    fill: rgb(255, 255, 255);
+}
+
+div.Footer_4{
+    text-align: center;
+    font-size: 11px;
+    color: rgb(102, 102, 102);
+}

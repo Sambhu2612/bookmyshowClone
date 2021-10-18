@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:1430px){
+    div.OutdoorEvents_Navigator_Container{
+        display: none;
+    }
+
+    div.OutdoorEvents_Carousel{
+        overflow-x: scroll !important;
+    }
+}
+
+div.OutdoorEvents{
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+    background: rgb(245, 245, 245);
+}
+
+div.OutdoorEvents_Text{
+    width: 92%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+div.OutdoorEvents_Text_1{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+div.OutdoorEvents_Text_2{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: rgb(220, 53, 88);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+div.OutdoorEvents_Text_1 div{
+    background: rgb(220, 53, 88);
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+div.OutdoorEvents_Text_2 div{
+    width: 4px;
+    height: 4px;
+    background: transparent;
+    border-top: 1px solid rgb(220, 53, 88);
+    border-right: 1px solid rgb(220, 53, 88);
+    transform: rotateZ(45deg);
+}
+
+
+
+div.OutdoorEvents_Carousel{
+    width: 92%;
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+div.OutdoorEvents_Slider{
+    display: flex;
+    gap: 23px;
+    transition: 1s ease;
+}
+
+div.OutdoorEvents_Slider div a div:nth-child(1){
+    height: calc(378.064px);
+    max-height: calc(378.064px);
+    border-radius: 8px;
+}
+
+div.OutdoorEvents_Slider div a div:nth-child(1) img{
+    height: 100%;
+    border-radius: 8px;
+}
+
+div.OutdoorEvents_Slider div a div:nth-child(2){
+    color: rgb(34, 34, 34);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+div.OutdoorEvents_Slider div a div:nth-child(3){
+    color: rgb(102, 102, 102);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+div.OutdoorEvents_Navigator_Container{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 50%;
+}
+
+div.OutdoorEvents_Navigator{
+    width: 92%;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.OutdoorEvents_Navigator_Left{
+    width: 40px;
+    height: 100%;
+    background-color: rgb(102, 102, 102);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    visibility: hidden;
+}
+
+div.OutdoorEvents_Navigator_Right{
+    width: 40px;
+    height: 100%;
+    background-color: rgb(102, 102, 102);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div.OutdoorEvents_Navigator_Left div{
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    left: 40%;
+}
+
+div.OutdoorEvents_Navigator_Right div{
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotateZ(45deg);
+    position: absolute;
+    right: 45%;
+}

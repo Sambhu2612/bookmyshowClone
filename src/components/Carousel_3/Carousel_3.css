@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:1430px){
+    div.Carousel_3_navigators_container{
+        display: none;
+    }
+
+    div.Carousel_3 div.Carousel_3_slider_container{
+        overflow-x: scroll !important;
+    }
+}
+
+div.Carousel_3{
+    width: 100%;
+    position: relative;
+    background: rgb(245, 245, 245);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+div.Carousel_3 div.Carousel_3_heading{
+    width: 92%;
+    max-width: 1240px;
+    margin: 0 auto;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+div.Carousel_3 div.Carousel_3_slider_container{
+    width: 92%;
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+div.Carousel_3 div.Carousel_3_slider_container div.Carousel_3_slider{
+    display: flex;
+    gap: 31px;
+    transition: 1s ease;
+}
+
+div.Carousel_3_cards_img_container{
+    height: calc(222.391px);
+    max-height: calc(222.391px);
+    border-radius: 8px;
+}
+
+div.Carousel_3_cards_img_container img{
+    height: 100%;
+    border-radius: 8px;
+}
+
+div.Carousel_3_navigators_container{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+}
+
+div.Carousel_3_navigators{
+    width: 92%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.Carousel_3_navigators_left{
+    width: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    visibility: hidden;
+}
+
+div.Carousel_3_navigators_right{
+    width: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div.Carousel_3_navigators_left div{
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    left: 40%;
+}
+
+div.Carousel_3_navigators_right div{
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotateZ(45deg);
+    position: absolute;
+    right: 43%;
+}

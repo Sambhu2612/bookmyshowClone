@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.Loader_Container{
+    width: 100%;
+    padding-bottom: 100px;
+    background: rgb(245, 245, 245);
+}
+
+div.Loader{
+    width: 46px;
+    height: 46px;
+    margin: 0 auto;
+    background-image: url(loader.jpg);
+    animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}
