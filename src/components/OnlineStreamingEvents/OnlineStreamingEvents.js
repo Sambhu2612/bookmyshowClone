@@ -35,17 +35,21 @@ function OnlineStreamingEvents(){
 }
 
 setTimeout(() => {
-    document.querySelector("div.Online_Streaming_Events_Carousel_navigators_left").addEventListener("click", ()=>{
-        document.querySelector("div.Online_Streaming_Events_Slider").style = "transform:translateX(0%)";
-        document.querySelector("div.Online_Streaming_Events_Carousel_navigators_left").style = "visibility:hidden";
-        document.querySelector("div.Online_Streaming_Events_Carousel_navigators_right").style = "visibility:visible";
-    });
-
-    document.querySelector("div.Online_Streaming_Events_Carousel_navigators_right").addEventListener("click", ()=>{
-        document.querySelector("div.Online_Streaming_Events_Slider").style = "transform:translateX(-101.5%)";
-        document.querySelector("div.Online_Streaming_Events_Carousel_navigators_right").style = "visibility:hidden";
-        document.querySelector("div.Online_Streaming_Events_Carousel_navigators_left").style = "visibility:visible";
-    });
+    try {
+        document.querySelector("div.Online_Streaming_Events_Carousel_navigators_left").addEventListener("click", ()=>{
+            document.querySelector("div.Online_Streaming_Events_Slider").style = "transform:translateX(0%)";
+            document.querySelector("div.Online_Streaming_Events_Carousel_navigators_left").style = "visibility:hidden";
+            document.querySelector("div.Online_Streaming_Events_Carousel_navigators_right").style = "visibility:visible";
+        });
+    
+        document.querySelector("div.Online_Streaming_Events_Carousel_navigators_right").addEventListener("click", ()=>{
+            document.querySelector("div.Online_Streaming_Events_Slider").style = "transform:translateX(-101.5%)";
+            document.querySelector("div.Online_Streaming_Events_Carousel_navigators_right").style = "visibility:hidden";
+            document.querySelector("div.Online_Streaming_Events_Carousel_navigators_left").style = "visibility:visible";
+        });
+    } catch (error) {
+        
+    }
 }, 200);
 
 export default OnlineStreamingEvents;

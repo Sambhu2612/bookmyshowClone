@@ -48,16 +48,20 @@ function Premiere(){
 }
 
 setTimeout(() => {
-    document.querySelector("div.Premiere_carousel_navigator_left").addEventListener("click", ()=>{
-        document.querySelector("div.Premiere_carousel_slider").style = "transform:translateX(0%)";
-        document.querySelector("div.Premiere_carousel_navigator_left").style = "visibility:hidden";
-        document.querySelector("div.Premiere_carousel_navigator_right").style = "visibility:visible";
-    });
-    document.querySelector("div.Premiere_carousel_navigator_right").addEventListener("click", ()=>{
-        document.querySelector("div.Premiere_carousel_slider").style = "transform:translateX(-102%)";
-        document.querySelector("div.Premiere_carousel_navigator_right").style = "visibility:hidden";
-        document.querySelector("div.Premiere_carousel_navigator_left").style = "visibility:visible";
-    });
+    try {
+        document.querySelector("div.Premiere_carousel_navigator_left").addEventListener("click", ()=>{
+            document.querySelector("div.Premiere_carousel_slider").style = "transform:translateX(0%)";
+            document.querySelector("div.Premiere_carousel_navigator_left").style = "visibility:hidden";
+            document.querySelector("div.Premiere_carousel_navigator_right").style = "visibility:visible";
+        });
+        document.querySelector("div.Premiere_carousel_navigator_right").addEventListener("click", ()=>{
+            document.querySelector("div.Premiere_carousel_slider").style = "transform:translateX(-102%)";
+            document.querySelector("div.Premiere_carousel_navigator_right").style = "visibility:hidden";
+            document.querySelector("div.Premiere_carousel_navigator_left").style = "visibility:visible";
+        });
+    } catch (error) {
+        
+    }
 }, 200);
 
 export default Premiere;

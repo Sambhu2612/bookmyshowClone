@@ -28,9 +28,11 @@ setTimeout(() => {
         document.querySelector("div.login_section").style = "z-index:4;top:12%;opacity:0";
         document.querySelector("div.Slide_Bar").style = "z-index:4;left:360px";
         setTimeout(() => {
-            document.querySelector("div.Slide_Bar").style = "z-index:-4;left:360px:display:none";
+            document.querySelector("div.Slide_Bar").style = "z-index:-4;left:360px;display:none";
+            document.querySelector("div.Registration_Section_container").style = "";
             document.querySelector("div.Black_Overlay").style = "display:none";
         }, 250);
+        document.querySelector("div.Registration_Section_container").style = "z-index:4;display:flex;";
         document.querySelector("body").style = "overflow-y:scroll";
     });
 
@@ -82,6 +84,20 @@ setTimeout(() => {
         }, 250);
         document.querySelector("div.Slide_Bar").style = "z-index:4;left:360px";
         document.querySelector("body").style = "overflow-y:scroll";
+    });
+
+
+    document.querySelector("div.Slide_Bar_register").addEventListener("click",()=>{
+        document.querySelector("div.Black_Overlay").style = "display:block";
+        document.querySelector("div.Slide_Bar").style = "z-index:4;left:360px";
+        setTimeout(() => {
+            document.querySelector("div.Slide_Bar").style = "z-index:-4;left:360px;display:none";
+        }, 250);
+        document.querySelector("div.Registration_Section_container").style = "z-index:4;display:flex;transition:0s;";
+        setTimeout(() => {
+            document.querySelector("div.Registration_Section_container").style = "z-index:4;display:flex;transition:.5s ease;top:0%;opacity:1;";
+        }, 20);
+        document.querySelector("body").style = "overflow-y:hidden";
     });
 }, 200);
 

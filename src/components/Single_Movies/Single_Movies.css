@@ -1,0 +1,12 @@
+div.Single_Movies{
+    width: 92vw;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    padding: 32px 0;
+}
+
+
+div.Single_Movies div.All_Movies_right_subsection_cards{
+    margin: 0 auto;
+}

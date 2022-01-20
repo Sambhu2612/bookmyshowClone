@@ -42,17 +42,21 @@ function OutdoorEvents(){
 }
 
 setTimeout(() => {
-    document.querySelector("div.OutdoorEvents_Navigator_Left").addEventListener("click", ()=>{
-        document.querySelector("div.OutdoorEvents_Slider").style = "transform:translateX(0%)";
-        document.querySelector("div.OutdoorEvents_Navigator_Left").style = "visibility:hidden";
-        document.querySelector("div.OutdoorEvents_Navigator_Right").style = "visibility:visible";
-    });
-
-    document.querySelector("div.OutdoorEvents_Navigator_Right").addEventListener("click", ()=>{
-        document.querySelector("div.OutdoorEvents_Slider").style = "transform:translateX(-101.5%)";
-        document.querySelector("div.OutdoorEvents_Navigator_Right").style = "visibility:hidden";
-        document.querySelector("div.OutdoorEvents_Navigator_Left").style = "visibility:visible";
-    });
+    try {
+        document.querySelector("div.OutdoorEvents_Navigator_Left").addEventListener("click", ()=>{
+            document.querySelector("div.OutdoorEvents_Slider").style = "transform:translateX(0%)";
+            document.querySelector("div.OutdoorEvents_Navigator_Left").style = "visibility:hidden";
+            document.querySelector("div.OutdoorEvents_Navigator_Right").style = "visibility:visible";
+        });
+    
+        document.querySelector("div.OutdoorEvents_Navigator_Right").addEventListener("click", ()=>{
+            document.querySelector("div.OutdoorEvents_Slider").style = "transform:translateX(-101.5%)";
+            document.querySelector("div.OutdoorEvents_Navigator_Right").style = "visibility:hidden";
+            document.querySelector("div.OutdoorEvents_Navigator_Left").style = "visibility:visible";
+        });
+    } catch (error) {
+        
+    }
 }, 200);
 
 export default OutdoorEvents;

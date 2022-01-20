@@ -1,0 +1,191 @@
+div.All_Movies_container{
+    width: 100%;
+    background: rgb(245, 245, 245);
+    padding-top: 64px;
+    user-select: none;
+}
+
+div.All_Movies{
+    width: 92vw;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+}
+
+div.All_Movies_left_subsection{
+    width: 300px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+div.All_Movies_left_subsection_heading{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin-bottom: 24px;
+}
+
+div.All_Movies_left_subsection_languages_container,div.All_Movies_left_subsection_genres_container,div.All_Movies_left_subsection_format_container{
+    margin-bottom: 12px;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    min-height: 52px;
+}
+
+div.All_Movies_left_subsection_languages,div.All_Movies_left_subsection_genres,div.All_Movies_left_subsection_format{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.All_Movies_left_subsection_languages_label_container,div.All_Movies_left_subsection_genres_label_container,div.All_Movies_left_subsection_format_label_container{
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+}
+
+div.All_Movies_left_subsection_languages_label_img,div.All_Movies_left_subsection_genres_label_img,div.All_Movies_left_subsection_format_label_img{
+    width: 10px;
+    height: 20px;
+}
+
+div.All_Movies_left_subsection_languages_label_img svg,div.All_Movies_left_subsection_genres_label_img svg,div.All_Movies_left_subsection_format_label_img svg{
+    width: 100%;
+    height: 100%;
+}
+
+div.All_Movies_left_subsection_browse{
+    width: 300px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(220, 53, 88);
+    border: 1px solid rgb(220, 53, 88);
+    border-radius: 4px;
+}
+
+div.All_Movies_left_subsection_hidden_section{
+    margin-top: 8px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+div.options{
+    height: 32px;
+    cursor: pointer;
+    padding: 0px 12px;
+    height: 32px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(220, 53, 88);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+@media (max-width:1024px){
+    div.All_Movies{
+        margin-top: 64px;
+        width: 100vw;
+        min-height: 400px;
+        margin: 0 auto;
+    }
+    div.All_Movies_left_subsection{
+        display: none;
+    }
+    div.All_Movies_right_subsection_cs_img{
+        display: none;
+    }
+    div.All_Movies_right_subsection{
+        width: 100% !important;
+    }
+}
+
+div.All_Movies_right_subsection{
+    width: calc(92vw - 330px);
+    max-width: calc(910px);
+    padding-bottom: 0px;
+}
+
+
+div.All_Movies_right_subsection_heading{
+    margin-bottom: 24px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+
+div.All_Movies_right_subsection_language_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+div.All_Movies_right_subsection_language_section_options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 1px 12px 0px;
+    height: 32px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+    color: rgb(220, 53, 88);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 32px;
+}
+
+div.All_Movies_right_subsection_cs_img{
+    width: 100%;
+    height: calc(75.8333px);
+    max-height: calc(75.8333px);
+    margin-bottom: 32px;
+}
+
+div.All_Movies_right_subsection_card_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+}
+
+div.All_Movies_right_subsection_cards_img{
+    height: calc(345.95px);
+    max-height: calc(345.95px);
+    max-width: calc(203.5px);
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+div.All_Movies_right_subsection_cards_img img{
+    border-radius: 8px;
+}
+
+div.All_Movies_right_subsection_cards_text{
+    margin-bottom: 4px;
+    color: rgb(102, 102, 102);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    max-width: calc(203.5px);
+}
+
+div.All_Movies_right_subsection_cards div:nth-child(2){
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+}

@@ -1,0 +1,217 @@
+div.Stream_Carousel_1{
+    width: 100%;
+    height: 472px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+div.Stream_Carousel_1_slider{
+    height: 100%;
+    display: flex;
+    width: fit-content;
+    transition: 1.5s ease;
+}
+
+div.Stream_Carousel_1_cards_container{
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: rgb(43, 49, 72);
+}
+
+div.Stream_Carousel_1_cards{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 33.17%, rgba(0, 0, 0, 0.8) 50.9%, rgba(0, 0, 0, 0.24) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.Stream_Carousel_1_cards_contents{
+    width: 92vw;
+    height: calc(408.004px);
+    max-height: calc(408.004px);
+    max-width: 1240px;
+    display: flex;
+    gap: 32px;
+}
+
+div.Stream_Carousel_1_cards_subsection_left{
+    border-radius: 16px;
+}
+
+div.Stream_Carousel_1_cards_subsection_left img{
+    height: calc(408.004px);
+    max-height: calc(408.004px);
+    border-radius: 16px;
+}
+
+div.Stream_Carousel_1_cards_subsection_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    max-width: 686px;
+}
+
+div.Stream_Carousel_1_cards_subsection_right div img{
+    max-height: 23.67px;
+    min-height: 23.67px;
+    max-width: 108px;
+    min-width: 108px;
+    border-radius: 8px;
+}
+
+div.Stream_Carousel_1_cards_subsection_right div div:nth-child(2){
+    margin: 8px 0px 0px;
+    word-break: break-word;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.Stream_Carousel_1_cards_subsection_right div:nth-child(2){
+    margin: 32px 0px 0px;
+    word-break: break-word;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.Stream_Carousel_1_cards_subsection_right div:nth-child(3){
+    margin: 16px 0px 0px;
+    word-break: break-word;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.Stream_Carousel_1_cards_subsection_right div:nth-child(4){
+    margin: 16px 0px 0px;
+    word-break: break-word;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.Stream_Carousel_1_cards_subsection_right div:nth-child(5){
+    margin: 16px 0px 0px;
+    word-break: break-word;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Navigators */
+
+div.Stream_Carousel_1_Navigator_Container{
+    width: 100%;
+    height: 46px;
+    background: transparent;
+    position: absolute;
+    top: 45%;
+    z-index: 2;
+}
+
+div.Stream_Carousel_1_Navigator{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.Stream_Carousel_1_Navigator_Left{
+    width: 40px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0px 6px 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+div.Stream_Carousel_1_Navigator_Right{
+    width: 40px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px 0px 0px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+div.Stream_Carousel_1_Navigator_Left div{
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    transform: rotateZ(-45deg);
+    position: absolute;
+    left: 45%;
+}
+
+div.Stream_Carousel_1_Navigator_Right div{
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    transform: rotateZ(45deg);
+    position: absolute;
+    right: 45%;
+}
+
+div.Stream_Carousel_1_indicators_container{
+    width: 100%;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 8px;
+}
+
+div.Stream_Carousel_1_indicators{
+    width: 36px;
+    margin-right: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.Stream_Carousel_1_indicators:nth-child(10){
+    background-color: rgb(196, 197, 198);
+}
+
+div.Stream_Carousel_1_indicators div{
+    height: 100%;
+    width: 0%;
+    transition: 6.5s ease;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width:568px){
+    div.Stream_Carousel_1_cards_subsection_right{
+        display: none;
+    }
+    div.Stream_Carousel_1_cards_contents{
+        justify-content: center;
+    }
+}

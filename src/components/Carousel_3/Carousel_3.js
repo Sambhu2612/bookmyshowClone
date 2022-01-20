@@ -35,39 +35,43 @@ function Carousel_3(){
 setTimeout(() => {
     var pos = 1;
 
-    document.querySelector("div.Carousel_3_navigators_left").addEventListener("click",()=>{
-        switch(pos){
-            case 2:
-                document.querySelector("div.Carousel_3_navigators_left").style = "visibility: hidden;";
-                document.querySelector("div.Carousel_3_navigators_right").style = "visibility: visible;";
-                document.querySelector("div.Carousel_3_slider").style = "transform:translateX(0)";
-                pos=1;
-                break;
-            case 3:
-                document.querySelector("div.Carousel_3_navigators_left").style = "visibility: visible;";
-                document.querySelector("div.Carousel_3_navigators_right").style = "visibility: visible;";
-                document.querySelector("div.Carousel_3_slider").style = "transform:translateX(-102%)";
-                pos=2;
-                break;
-        }
-    });
-
-    document.querySelector("div.Carousel_3_navigators_right").addEventListener("click",()=>{
-        switch(pos){
-            case 1:
-                document.querySelector("div.Carousel_3_navigators_left").style = "visibility: visible;";
-                document.querySelector("div.Carousel_3_navigators_right").style = "visibility: visible;";
-                document.querySelector("div.Carousel_3_slider").style = "transform:translateX(-102%)";
-                pos=2;
-                break;
-            case 2:
-                document.querySelector("div.Carousel_3_navigators_left").style = "visibility: visible;";
-                document.querySelector("div.Carousel_3_navigators_right").style = "visibility: hidden;";
-                document.querySelector("div.Carousel_3_slider").style = "transform:translateX(-143%)";
-                pos=3;
-                break;
-        }
-    });
+    try {
+        document.querySelector("div.Carousel_3_navigators_left").addEventListener("click",()=>{
+            switch(pos){
+                case 2:
+                    document.querySelector("div.Carousel_3_navigators_left").style = "visibility: hidden;";
+                    document.querySelector("div.Carousel_3_navigators_right").style = "visibility: visible;";
+                    document.querySelector("div.Carousel_3_slider").style = "transform:translateX(0)";
+                    pos=1;
+                    break;
+                case 3:
+                    document.querySelector("div.Carousel_3_navigators_left").style = "visibility: visible;";
+                    document.querySelector("div.Carousel_3_navigators_right").style = "visibility: visible;";
+                    document.querySelector("div.Carousel_3_slider").style = "transform:translateX(-102%)";
+                    pos=2;
+                    break;
+            }
+        });
+    
+        document.querySelector("div.Carousel_3_navigators_right").addEventListener("click",()=>{
+            switch(pos){
+                case 1:
+                    document.querySelector("div.Carousel_3_navigators_left").style = "visibility: visible;";
+                    document.querySelector("div.Carousel_3_navigators_right").style = "visibility: visible;";
+                    document.querySelector("div.Carousel_3_slider").style = "transform:translateX(-102%)";
+                    pos=2;
+                    break;
+                case 2:
+                    document.querySelector("div.Carousel_3_navigators_left").style = "visibility: visible;";
+                    document.querySelector("div.Carousel_3_navigators_right").style = "visibility: hidden;";
+                    document.querySelector("div.Carousel_3_slider").style = "transform:translateX(-143%)";
+                    pos=3;
+                    break;
+            }
+        });
+    } catch (error) {
+        
+    }
 }, 200);
 
 export default Carousel_3;

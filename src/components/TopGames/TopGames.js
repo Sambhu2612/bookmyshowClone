@@ -41,17 +41,21 @@ function TopGames(){
 }
 
 setTimeout(() => {
-    document.querySelector("div.TopGames_Navigator_Left").addEventListener("click", ()=>{
-        document.querySelector("div.TopGames_Slider").style = "transform:translateX(0%)";
-        document.querySelector("div.TopGames_Navigator_Left").style = "visibility:hidden";
-        document.querySelector("div.TopGames_Navigator_Right").style = "visibility:visible";
-    });
-
-    document.querySelector("div.TopGames_Navigator_Right").addEventListener("click", ()=>{
-        document.querySelector("div.TopGames_Slider").style = "transform:translateX(-101.5%)";
-        document.querySelector("div.TopGames_Navigator_Right").style = "visibility:hidden";
-        document.querySelector("div.TopGames_Navigator_Left").style = "visibility:visible";
-    });
+    try {
+        document.querySelector("div.TopGames_Navigator_Left").addEventListener("click", ()=>{
+            document.querySelector("div.TopGames_Slider").style = "transform:translateX(0%)";
+            document.querySelector("div.TopGames_Navigator_Left").style = "visibility:hidden";
+            document.querySelector("div.TopGames_Navigator_Right").style = "visibility:visible";
+        });
+    
+        document.querySelector("div.TopGames_Navigator_Right").addEventListener("click", ()=>{
+            document.querySelector("div.TopGames_Slider").style = "transform:translateX(-101.5%)";
+            document.querySelector("div.TopGames_Navigator_Right").style = "visibility:hidden";
+            document.querySelector("div.TopGames_Navigator_Left").style = "visibility:visible";
+        });
+    } catch (error) {
+        
+    }
 }, 200);
 
 export default TopGames;

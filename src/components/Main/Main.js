@@ -121,17 +121,21 @@ function Main() {
 }
 
 setTimeout(() => {
-  document.querySelector("div.Navigators div.left").addEventListener("click",()=>{
-    document.querySelector("div.Navigators div.left").style = "visibility:hidden";
-    document.querySelector("div.Navigators div.right").style = "visibility:visible";
-    document.querySelector("div.Carosel_2").style = "transform: translateX(0);";
-  });
-  
-  document.querySelector("div.Navigators div.right").addEventListener("click",()=>{
-    document.querySelector("div.Navigators div.right").style = "visibility:hidden";
-    document.querySelector("div.Navigators div.left").style = "visibility:visible";
-    document.querySelector("div.Carosel_2").style = "transform: translateX(-101.7%);";
-  });
+  try {
+    document.querySelector("div.Navigators div.left").addEventListener("click",()=>{
+      document.querySelector("div.Navigators div.left").style = "visibility:hidden";
+      document.querySelector("div.Navigators div.right").style = "visibility:visible";
+      document.querySelector("div.Carosel_2").style = "transform: translateX(0);";
+    });
+    
+    document.querySelector("div.Navigators div.right").addEventListener("click",()=>{
+      document.querySelector("div.Navigators div.right").style = "visibility:hidden";
+      document.querySelector("div.Navigators div.left").style = "visibility:visible";
+      document.querySelector("div.Carosel_2").style = "transform: translateX(-101.7%);";
+    });
+  } catch (error) {
+    
+  }
 }, 200);
 
 export default Main;

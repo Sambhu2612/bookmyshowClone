@@ -8,9 +8,9 @@ function Slide_Bar(){
                 <div className="Slide_Bar_subsection_2">
                     <div><img src="rewards_login.jpg" /></div>
                     <div>Unlock special offers & great benefits</div>
-                    <div>
+                    <div className="Slide_Bar_register">
                         <a>
-                            Login / Register
+                            Register
                         </a>
                     </div>
                 </div>
